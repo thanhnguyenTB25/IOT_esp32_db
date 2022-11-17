@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="main2.css">
+        <!--image src-->
+        <!--------------------------->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.2/dist/chart.min.js"></script>
+        <script src="socket.io/socket.io.js"></script> <!--dùng để chạy file main.js-->
+    </head>
+    <script> var socket =io('http://localhost:8888') </script>
+    <body>
+        <!-----------------============================hiển thị value cảm biến===========================-------------------->
+        <div class="row" style="height: 5vh; color:brown; background-color:rgb(44, 12, 54);"><h2 style="padding-top:10px;text-align: center;width:100%;">NGUYỄN TIẾN THÀNH - B19DCDT223 - IOT WEB</h2></div>
+        <div class="row" >
+            <div class="row">
+            <div id="nhietdo" class="col-sm text-center dt_sensor1" style="height: 15vh">
+                <img src="hot.png" style="height: 30%;">              
+                <p class="text-light text-center" style="font-size: 20px;">TEMPERATURE</p>
+                <p id="tem" >.....</p>
+            </div>
+            <div id="doam" class="col-sm text-center dt_sensor2" style="height: 15vh">
+                <img src="humidity.png" style="height: 30%;">
+                <p class="text-light text-center" style="font-size: 20px;">HUMIDITY</p>
+                <p id="hum" style="font-size: 18px;">.....</p>
+            </div>
+            </div>
+            <div class="row">
+            <div id="anhsang"class="col-sm text-center dt_sensor3" style="height: 15vh">
+                <img src="sunny.png" style="height: 30%;">
+                <p class="text-light text-center" style="font-size: 20px;">LIGHT</p>
+                <p id="lux">.....</p>
+            </div>
+            <div id="thoigian"class="col-sm text-center time_update" style="height: 15vh">
+                <img src="day-and-night.png" style="height: 30%;">
+                <p class="text-light text-center" style="font-size: 20px;">DATE - TIME</p>
+                <p id="time" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"></p>
+
+            </div>
+            </div>
+        </div>
+        <!--==============================đồ thị + button====================================-->
+        <div class="row row_3">
+            <div class="col-sm-8" style="height: 60vh;">
+                <canvas id="myChart" style="width:100%;"></canvas>
+                <!--<img src="https://png.pngtree.com/png-vector/20190830/ourlarge/pngtree-stock-graph-without-bars-positive-green-going-up-png-image_1711783.jpg" style="width:100%;height:100%">-->
+            </div>
+            <!------------------------------------------------------------->
+            <div class="col-sm bodo" style="height: 60vh;">
+                
+                <div class="row text-center option1" style="  height: 35vh;">
+                    <button id="change_color" class="btn">
+                        <div class="pt-3 ">
+                        <img id="bulb1" src="pic_bulboff.png" style="width: 15%;">
+                        <h1 style="font-size: 25px;">LED1</h1>
+                        </div> 
+                    </button>
+                </div>
+                
+                <div class="row text-center option2" style="color:rgb(237, 234, 234); background-color: rgb(69, 1, 52); height: 35vh;">
+                   <div class="pt-5" >
+                        <img id="bulb2" src="pic_bulboff.png" style="width: 15%;"> <br>
+                        <h1 style="font-size: 25px;">LED2</h1>
+                        <button id="on2"  class="button button1">ON</button>
+                        <button id="off2" class="button button2">OFF</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

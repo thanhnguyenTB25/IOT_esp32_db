@@ -1,0 +1,144 @@
+
+  .dt_sensor1{
+    background-color: #c2451b;
+  }
+  .dt_sensor2{
+    background-color: #0076d7;
+  }
+  .dt_sensor3{
+    background-color: #c3cc0d;
+  }
+  .dt_sensor1{
+    box-sizing: border-box;
+    border: 2px solid white;
+  }
+  .dt_sensor2{
+    box-sizing: border-box;
+    border: 2px solid white;
+  }
+  .dt_sensor3{
+    box-sizing: border-box;
+    border: 2px solid white;
+  }
+  .time_update{
+    box-sizing: border-box;
+    border: 2px solid white;
+    background-color: #377691;
+  }
+
+
+  div.dt_sensor1:hover {
+    /* opacity: 0.5;
+    background-image: linear-gradient(to bottom,rgb(209, 74, 74), rgb(236, 57, 57)); */
+    background: #791304 !important; /*background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;*/
+  }
+  div.dt_sensor2:hover{
+    background: rgb(2, 68, 150) !important;
+
+  }
+  div.dt_sensor3:hover{
+    background: rgb(150, 153, 0) !important;
+  }
+  div.time_update:hover{
+    background: rgb(28, 22, 62);
+    color:white;
+  }
+  button.button1:hover, button.button2:hover{
+    background: rgb(180, 39, 39);
+  }
+
+  /* .gradient-custom { */
+                            /* fallback for old browsers */
+    /* background: #6a11cb; */
+  
+                          /* Chrome 10-25, Safari 5.1-6 */
+    /* background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 0.5), rgba(37, 117, 252, 0.5)); */
+  
+                        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: linear-gradient(to right, rgba(76, 9, 149, 0.5), rgba(37, 117, 252, 0.5))
+  } */
+
+
+
+/* .btn-danger:hover{
+  background-color: #43306a !important;
+}
+.btn-success:hover{
+  background-color: #4928ca !important;
+}
+.btn-secondary:hover{
+  background-color: #6a11cb !important;
+} */
+
+/* 
+.fan{
+  border: 1px solid none;
+  width: 60%;
+  height: 100%;
+  float: left;
+  box-sizing: border-box;
+  background-image: linear-gradient(to bottom,chartreuse, yellow);
+  padding-top: 40px;
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+*/
+/*====================tonggle button========================*/
+
+
+
+
+.option1{
+  background-color: #15ad15;
+  border: 2px solid white;
+  box-sizing: border-box;
+
+}
+/* div.option1:hover{
+  background: #0c2b0d !important;
+  color:rgb(241, 241, 241);
+  box-sizing: border-box ;
+} 
+*/
+#change_color:hover{
+  background: #165618 !important;
+  color:rgb(241, 241, 241);
+  /* border: 20px solid white; */
+  box-sizing: border-box ;
+  cursor: pointer;
+  transition: 0.5s ;
+}
+.option2{
+  box-sizing: border-box;
+  border: 2px solid white;
+}
+
+
+
+
+.button {
+  border: none;
+  color: rgb(7, 11, 89);
+  padding: 3% 5%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+.button1 {background-color: #038407;} /* Green */
+.button2 {background-color: #283033;} /* Blue */
+
+
+
+.row_3{
+  box-sizing: border-box;
+  background-color: white;
+  padding-right: 25px;
+}
